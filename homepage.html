@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <title>Tourism spots</title>
+
+                                                           <!--googlefonts-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=PT+Serif&display=swap" rel="stylesheet">
+   
+
+                                                              <!--CSS rules--> 
+    
+        <style>
+
+      .highlights
+        {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        
+        }
+
+        .highlights img
+        {
+        flex-basis:250px;
+        }
+
+       .highlights img:hover
+        {
+        opacity:0.8;
+        }
+
+      .navbar
+        {
+        overflow:hidden;
+        background:linear-gradient(90deg,#ff5e62 0%,#ff9966 100%);
+        position:sticky;
+        top:0;
+        }
+
+        .navbar a
+        {
+        float:left;
+        padding:14px 16px;
+        color:white;
+        text-align:center;
+        text-decoration:none;
+        font-size:20px;
+        }
+
+        .navbar a:hover
+        {  
+
+        color:#000000;
+        background:#ffffff;
+        
+        }                
+        .image
+        {
+        width:100%;
+        height:auto;
+        opacity:1;
+        }
+        
+        .container
+        {
+        border:1px solid orange; 
+        padding:0px 5px 5px 5px;
+        box-sizing:padding box;
+        background-color:#DE9B72;        
+        }
+
+       .white
+       {
+       background-color:#ffffff;
+       margin:20px;
+       }
+       
+      h1
+      {
+      font-family: 'Gemunu Libre', sans-serif;
+      letter-spacing:2px;
+      font-size:30 px;
+      color:rgba(255,0,0,0.6);
+      text-align:center;
+      margin-bottom:10px;
+      }
+
+      p
+      {
+       letter-spacing:1px;
+       line-height:1.6;
+       word-spacing:12px;
+       color:rgb(200,75,75);
+       text-indent:30%;
+      }
+      
+      p::first-letter
+      {
+      font-size:200%;
+      color:seagreen;
+      }
+
+      #feedback
+       {
+        display:block;
+        border-radius: 5px;
+        height:auto;
+        background-color:white;
+        margin:20px  100px;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+       input[type], select,textarea,number
+      {
+       width: 100%;
+       padding: 15px 20px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 10px;
+       box-sizing: border-box;
+      }
+      input[type=submit]
+     {
+       width: 50%;
+       background:linear-gradient(90deg,#ff5e62 0%,#ff9966 100%);
+       color: white;
+       padding: 14px 20px;
+       margin: 8px 250px;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+      }
+      input[type=submit]:hover
+     {
+      background:linear-gradient(90deg,#ff9966 0%,#ff5e62 100%);
+      }
+
+      hr
+      {
+      border:2px double black;
+      }
+ 
+      .outer
+      {
+      display:block;
+      background-color:rgb(253,106,2);
+      width:100%;
+      height:auto;
+      }
+
+       
+
+       .pagination
+     {
+      display: inline-block;
+      margin:50px 500px 30px 500px;
+     }
+     .pagination a
+     {
+      text-align:center;
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+     }
+     .pagination a.active 
+     {
+      background-color: #4CAF50;
+      color: white;
+      }
+     .pagination a:hover:not(.active) {background-color: #ddd;}
+
+        </style>
+ 
+    </head>
+
+    <body>
+
+         <div class="navbar"> 
+
+            <a href="#">Home</a>         
+            <a href="#">Destination</a>
+            <a href="#high">Places</a>
+            <a href="#">about</a> 
+        
+         </div>
+
+         <div class="container">
+
+              <img class="image" src="file:tourist.jpeg" alt="tourism" width=500 height=1000;>
+
+         </div>
+         <div class="white">
+            <h1>" TRAVEL IS NEVER A MATTER OF MONEY BUT OF COURAGE "</h1>
+            <p>South India has a lot more to offer than mere beaches and spice plantations. It’s a melting pot of cultures, cuisines, traditions, and languages. From honeymooning couples to families, the southern states of Kerala, Karnataka, Andhra Pradesh, and Tamil Nadu welcome tourists with warmth and love. There’s something to do for everyone here – water sports for the adventurous, backwaters for the romantics, trekking trails for hikers, and panoramic vistas for nature lovers. Read ahead to know about the top places to visit in South India</p>
+            
+            <hr>
+
+           
+           <div class="outer">
+
+ 
+               <div id="feedback">
+                   <h2 id="demo" style="text-align:center">Feedback Form</h2>
+                   <h5 style="text-align:center">Please fill the form to Share your experience with us.</h5>
+                   <form>
+                         <label for="fname">First Name</label>
+                         <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+                        
+                         <label for="age">Age</label>
+                         <input type="number" id="age" name="age" placeholder="Enter  your age">
+
+                         <label for="email">Email</label>
+                         <input type="email" id="email" name="email" placeholder="Enter your email">
+ 
+                         <label for="contact">Contact Number</label>
+                         <input type="text" id="contact"  name="contact" placeholder="Enter your contact number">
+
+                         <label for="favt">Favourite Place</label>
+                         <select id="favt" name="favt">
+                                     <option value="banglore">Banglore</option>
+                                     <option value="hyderabad">hydrebad</option>
+                                     <option value="vishakapatnam">vishakapatnam</option>
+                        </select>
+                        <label for="subject">Enter your comments</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                     </form>
+             
+         </div>
+       </div>
+
+         <hr>   
+         <h1>HIGHLIGHTS</h1>
+   
+       
+
+      <div id="high" class="highlights">
+     
+            <img src="file:banglore.jpeg" alt="Banglore" width="350" height="300">
+            
+            <img src="file:hyderabad.jpeg" alt="Hyderabad" width="350" height="300">
+            
+            <img src="file:vishakaptnam.jpeg" alt="Vishakaptnam" width="350" height="300">
+ 
+      </div>
+
+        <div class="pagination">
+                   <a href="#">&laquo;</a>
+                   <a href="file:homepage.html" target="_blank">1</a>
+                   <a href="file:banglore.html"  target="_blank">2</a>
+                   <a href="file:vizag.html#city"  target="_blank">3</a>
+                   <a href="file:hyderabad.html" target="_blank">4</a>
+                   <a href="#">&raquo;</a>
+        </div>
+
+   
+
+  <script src="demo.js">
+
+  </script>
+
+  </body>
+</html>
